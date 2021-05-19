@@ -27,7 +27,6 @@ dependencies:
   dio: ^4.0.0
   get: ^4.1.4
   get_storage: ^2.0.2
-  shared_preferences: ^2.0.5
 
 dev_dependencies:
   test:

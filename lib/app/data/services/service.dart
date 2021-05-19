@@ -34,6 +34,8 @@ class AppConfigService extends GetxService {
       DioInterceptor.updateAcessToken();
       box.write(StorageConstants.IS_LOGGED_IN, true);
       isLoggedIn.value = true; 
+      //add the interceptor if have a access token
+      _dio.instance.interceptors.add(DioInterceptor());
     }
     return this;
   }

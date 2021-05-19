@@ -15,7 +15,7 @@ class DioSingleton {
     _dio.options.receiveTimeout = 3000;
   }
 
-  get instance => this._dio;
+  Dio get instance => this._dio;
 
 }
 

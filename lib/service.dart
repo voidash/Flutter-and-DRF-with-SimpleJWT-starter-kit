@@ -4,7 +4,6 @@ import 'package:dio_dabble/jwt_token.dart';
 import 'package:get/get.dart';
 import 'package:dio/dio.dart' as dio;
 import 'package:get_storage/get_storage.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class Service extends GetxService {
 
@@ -13,7 +12,7 @@ class Service extends GetxService {
     var _dio = DioSingleton();
     final box = GetStorage();
 
-    _dio.init(url: 'http://localhost:8000');
+    _dio.init(url: 'http://voidash.pythonanywhere.com');
 
     var data = {
       'username': 'voidash',
